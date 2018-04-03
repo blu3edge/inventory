@@ -1,0 +1,91 @@
+<div class="col-lg-12 clo-lg-offset-1">
+	<div class="jumbotron">
+<h3>{{title}}</h3>
+	<hr/>
+	<p>Seleccione la modalidad de ingreso del bien.</p>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+<ul class="nav nav-pills mb-3" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="#masiva" role="tab" data-toggle="tab">Carga Masiva</a>
+    
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#manual" role="tab" data-toggle="tab">Carga Manual</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#scaner" role="tab" data-toggle="tab">Escanear</a>
+  </li>
+  <br/>
+  <br/>
+  <br/>
+  <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="masiva">
+  	<fieldset class="scheduler-border">
+			 <legend class="scheduler-border">Carga Masiva</legend>
+		<p>	
+
+			<label class="formulario">1.-Descargue la plantilla para la carga masiva.  <button type="submit" class="btn btn-success">  Descargar</button></label><br/><br/>
+				<label class="formulario">2.-Seleccione la plantilla.<div class="custom-file">
+  <div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+  <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+</div>
+</div>
+				</label>
+				<br/>
+				<br/>
+				<button type="submit" class="btn btn-success">Aceptar</button>
+				<button type="reset" class="btn btn-secundary">Cancelar</button>
+			</p>
+			</fieldset>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="manual">
+  	<form>
+			<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Carga Manual</legend>
+			<p>
+			<label class="formulario">Fecha de ingreso</label>
+			<input type="date" name="fechaingreso" class="form-control" required >
+			<label class="formulario">N° Guía de despacho</label>
+			<input type="text" name="numguia" class="form-control" placeholder="Ingrese número" required>
+			<label class="formulario">Emisor</label>
+			<input type="text" name="emisor" class="form-control" placeholder="Ingrese emisor" required>
+			<label class="formulario">Transporte</label>
+			<input type="text" name="transp" class="form-control" placeholder="Ingrese transporte" required>
+			<label class="formulario">Orígen de envío</label>
+			<input type="text" name="origendeenvio" class="form-control" placeholder="Ingrese origen de envio" required>
+			<label class="formulario">Número de inventario</label>
+			<input type="text" name="numeinven" class="form-control" placeholder="Ingrese número" required>
+			<label class="formulario">Descripción del bien</label>
+			<textarea class="form-control" rows="5" id="comment" placeholder="Ingrese descripción del bien" required></textarea>
+			<label class="formulario">Marca</label>
+			<input type="text" name="marca" class="form-control" placeholder="Ingrese marca" required>
+			<label class="formulario">Modelo</label>
+			<input type="text" name="modelo" class="form-control" placeholder="Ingrese modelo" required>
+			<label class="formulario">Número de serie</label>
+			<input type="text" name="serie" class="form-control" placeholder="Ingrese número" required>
+			<br/>
+			 <label class="formulario">Estado del bien:</label>
+  <select class="formulario">
+  	<option class="f">Seleccione..</option>
+    <option>Buen estado</option>
+    <option>Mal estado</option>
+    <option>Deshuso</option>
+      </select>
+      <br/>
+      <label class="formulario">Fecha de Adquisición</label>
+			<input type="date" name="fechaadq" class="form-control">
+			<label class="formulario">Valor de adquisición</label>
+			<input type="text" name="valoradq" class="form-control" placeholder="Ingrese valor" required>
+		</p>
+	</fieldset>
+	<br/>
+		<button type="submit" class="btn btn-success">Ingresar</button>
+		<button type="reset" class="btn btn-secundary">Limpiar</button>
+		</form>
+  </div>
+  
+</div>
+</ul>
+</div>
+</div>
