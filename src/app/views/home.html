@@ -1,143 +1,51 @@
 <div class="col-lg-12 clo-lg-offset-1">
-	<div class="jumbotron">
-	<h3 class="glyphicon glyphicon-home">  {{titulo}}</h3>
-	<hr/>
+    <div class="jumbotron">
+    <h3 class="glyphicon glyphicon-home">  {{titulo}}</h3>
+    <hr/>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
 
-	<div class="main-content">
+    <div class="main-content">
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats" >
-                        <div class="card-header" data-background-color="orange">
-                            
-                        </div>
-                        <div class="card-content1">
-                             <p class="category">Bienes</p>
-                            <app-dona></app-dona>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats" >
-                        <div class="card-header" data-background-color="green">
-                            
-                        </div>
-                        <div class="card-content1">
-                            <p class="category">Movimientos Diarios</p>
-                            <app-barra></app-barra>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    
-                         <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats" >
-                        <div class="card-header" data-background-color="green">
-                            
-                        </div>
-                        <div class="card-content1">
-                            <p class="category">Últimos 3 meses</p>
-                            <app-barra-mensual></app-barra-mensual>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    
-                     <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats" >
-                        <div class="card-header" data-background-color="green">
-                            
-                        </div>
-                        <div class="card-content1">
-                            <p class="category">Total en Inventario</p>
-                            <img src="‪./img/stock.png">
-                            <h3>1983</h3>
-                            <p class="category">Producto con mayor egreso</p>
-                            <h3>ATM</h3>
-                             <button type="button" class="btn btn-warning" [routerLink]="['/productos']" [routerLinkActive]="['activado']">Detalle</button>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    
-                </div>
-                          <hr/>     
-
-            <div class="row">
-               
-
-                <div class="col-lg-6 col-md-12">
-                    <div class="card-content2" >
-                        <div class="card-header" data-background-color="orange">
-                            
-                            <p class="category">Últimos movimientos</p>
-                        </div>
-                        <div class="card-content table-responsive">
-                            <table class="table table-hover">
-                                <thead class="text-warning">
-                                    <tr class="bg-danger">
-                                        <th>ID</th>
-                                        <th>Nombre</th>
-                                        <th>Cantidad</th>
-                                        <th>Movimiento</th>
-                                        <th>Usuario</th>
-                                        <th>Fecha</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>23</td>
-                                        <td>Cerveza</td>
-                                        <td>1600</td>
-                                        <td>Ingreso</td>
-                                        <td>n.saa</td>
-                                        <td>23/03/2018 19:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>manzana</td>
-                                        <td>238</td>
-                                        <td>Egreso</td>
-                                        <td>n.saa</td>
-                                        <td>23/03/2018 19:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Papas Fritas</td>
-                                        <td>566</td>
-                                        <td>Ingreso</td>
-                                        <td>n.saa</td>
-                                        <td>23/03/2018 19:00</td>
-                                    </tr>
-                                   
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="card card-stats" >
-                        <div class="card-header" data-background-color="green">
-                            
-                        </div>
-                        <div class="card-content1">
-                            <p class="category">Últimos 6 meses</p>
-                            <app-lineal></app-lineal>
-                        </div>
-                       
-                        </div>
-                    </div>
-
-
-            </div>
-        </div>
+        <div class="row">
+  <div class="col-sm-4 bg-danger border-danger">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Estado Stock</h4>
+        <app-dona></app-dona>
+        <a [routerLink]="['/productos']" [routerLinkActive]="['activado']" class="btn btn-primary">Detalle</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4 bg-success border-danger">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Movimientos</h5>
+        <app-lineal></app-lineal>
+        <a href="#" class="btn btn-primary">Detalle</a>
+      </div>
+    </div>
+  </div>
+   
 </div>
 
-	</div>
-</div>
+<div class="row">
+  <div class="col-sm-4 bg-danger border-danger">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Estado Stock</h4>
+        <app-dona></app-dona>
+        <a [routerLink]="['/productos']" [routerLinkActive]="['activado']" class="btn btn-primary">Detalle</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4 bg-success border-danger">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Movimientos</h5>
+        <app-lineal></app-lineal>
+        <a href="#" class="btn btn-primary">Detalle</a>
+      </div>
+    </div>
+  </div>
+   
 

@@ -1,19 +1,45 @@
 <div class="col-lg-12 clo-lg-offset-1">
-	<div class="jumbotron">
-	<h3>{{titulo}}</h3>
-	
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
-	<hr/>
-	<form>
-		<p>	
-			<label class="formulario">Buscar</label>
-			<input type="text" name="producto" class="form-control" required>
-		</p>
-		
-		<input type="submit" value="Buscar" class="btn btn-success" />
-	</form>
-	<hr/>
-	<table class="table table-bordered">
+  <div class="jumbotron">
+  <h3>{{titulo}}</h3>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+  <hr/>
+  
+<fieldset class="scheduler-border">
+      <legend class="scheduler-border">Búsqueda</legend>
+<form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">Id</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="Ingresa id de producto" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Nombre</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Ingresa nombre de producto" value="" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Fecha ingreso</label>
+      <div class="input-group">
+            <input type="date" name="fechaingreso" class="form-control" required >
+      </div>
+    </div>
+  </div>
+ 
+        <div class="col-md-4 mb-3">
+      <label for="validationDefault03">Fecha Egreso</label>
+      <input type="date" name="fechaingreso" class="form-control" required >
+    
+      
+  </div>
+  <br/><br/> 
+  <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
+</fieldset>
+
+  <hr/>
+  <div class="table-responsive">
+  <table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">N°</th>
@@ -23,73 +49,53 @@
       <th scope="col">Descripción</th>
       <th scope="col">Descripción</th>
       <th scope="col">Descripción</th>
-      <th scope="col">Descripción</th>
+      <th scope="col">Acción</th>
           </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
       <td>1323</td>
       <td>2332</td>
-      <td>3434</td>
+      <th scope="row">1</th>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td><div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span>  ver</button>
+        <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span>  Editar</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-trash"></span>  Eliminar</button>
+  
+</div></td>
+
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>ATS</td>
-      <td>ATS</td>
-      <td>ATS</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">4</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">5</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">6</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">7</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">8</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-     <tr>
-      <th scope="row">9</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td colspan="2">PERTO</td>
-      <td>PERTO</td>
-      <td>PERTO</td>
-    </tr>
+    
 
   </tbody>
 </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Confirmación</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>¿Esta seguro de eliminar el registro seleccionado?</p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>  Eliminar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <button type="submit" class="btn btn-success">Descargar</button>
-	</div>
+  </div>
 </div>
