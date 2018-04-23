@@ -15,6 +15,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 //angular material
 
 //graficos
@@ -44,8 +45,9 @@ import { LinealComponent } from './graficos/principal/lineal/lineal.component';
     DonaComponent,
     BarraComponent,
     BarraMensualComponent,
-    LinealComponent
-    
+    LinealComponent,
+    UserEditComponent
+
   ],
   imports: [
     BrowserModule,
@@ -53,8 +55,8 @@ import { LinealComponent } from './graficos/principal/lineal/lineal.component';
     HttpModule,
     routing,
     ChartsModule
-   
-    
+
+
   ],
   providers: [
   appRoutingProviders

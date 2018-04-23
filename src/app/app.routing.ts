@@ -11,11 +11,13 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { RegisterComponent } from './register/register.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { LoginComponent } from './login/login.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+
 
 
 const appRoutes: Routes = [
 
-{path: '', component: LoginComponent},
+{path: '', component: HomeComponent},
 {path: 'home', component: HomeComponent},
 {path: 'productos' , component: ProductosListComponent},
 {path: 'ingresarproductos' , component: ProductoComponent},
@@ -24,6 +26,7 @@ const appRoutes: Routes = [
 {path: 'reportes' , component: ReportesComponent},
 {path: 'registro' , component: RegisterComponent},
 {path: 'login' , component: LoginComponent},
+{path: 'mis-datos' , component: UserEditComponent},
 {path: '**', component: ErrorComponent}
 ];
 
