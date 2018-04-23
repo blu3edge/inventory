@@ -9,11 +9,10 @@ import { UserService } from '../services/user.service';
 	selector: 'register',
 	templateUrl: './register.component.html',
 	providers: [UserService]
-	
+
 })
 export class RegisterComponent implements OnInit{
 
-	
 	public user: User;
 	public status: string;
 
@@ -23,25 +22,25 @@ export class RegisterComponent implements OnInit{
 		private _user_Service: UserService
 	)
 	{
-		
-		this.user = new User('','','','','','ROLE_USER');
+
+		this.user = new User('','','','','','ROLE_USER','');
 	}
 
 	ngOnInit(){
 		console.log('register.component cargado!');
-		
+
 	}
 	onSubmit(){
 		this._user_Service.register(this.user).subscribe(
               response => {
               	if(response.user){
-                
+
                 this.status = 'El registros se ha realizado correctamente,identificate con '+this.user.email;
             }else{
-            	 
+
             	 this.status = 'Error al registrarse';
            }
-           this.user = new User('','','','','','ROLE_USER');
+           this.user = new User('','','','','','ROLE_USER','');
               },
               error => {
               	console.log(<any>error);
