@@ -1,0 +1,118 @@
+#content{
+	margin-top: 30px;
+	background: white;	
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px #ccc;
+	padding: 0px;
+	overflow: hidden;
+
+
+}
+#header{
+	background: #E03137;
+	color: white;
+	margin: 0px;
+	height: 90px;
+	line-height: 90px;
+
+}
+
+#header h1{
+		display: block;
+		line-height: 90px;
+		font-weight: bold;
+		font-size: 30px;
+
+}
+#nav{
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(224, 49, 55, 0.67);
+}
+
+#nav ul{
+	margin: 0px;
+	list-style: none;
+	padding-left: 20px;
+	background: rgba(224, 49, 55, 0.67);
+
+}
+#nav ul li{
+
+		float: left;
+		margin-right: 20px;
+
+
+}
+#nav ul li a{
+	display: block;
+	color: white;
+	height: 30px;
+	line-height: 29px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all 300ms;
+	
+}
+#nav ul li a:hover{
+	text-decoration: none;
+	background: rgba(224, 49, 55, 0.67);
+
+}
+
+.activado{
+	text-decoration: none !important;
+	background: rgba(224, 49, 55, 0.67) !important;
+	border-bottom: 4px solid #f0ad4e !important;
+
+}
+#footer{
+	margin-top:50px;
+	padding-top:10px;
+	border-top:1px solid #eee;
+	color: gray;
+
+}
+#main .jumbotron{
+	padding: 50px;
+	margin-top: 30px;
+	border-radius: 5px;
+
+}
+fieldset.scheduler-border {
+    border: solid 2px #DDD !important;
+    padding: 0 10px 10px 10px;
+    border-bottom: none;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+textarea.form-control{
+	resize: none;
+}
+label.formulario{
+
+	font-size:17px;
+	font-weight: normal !important;
+}
+label.radio-inline{
+	font-size: 17px;
+}
+label.for{
+	font-size: 17px;
+}
+div.card-content1{
+border-radius: 25px;
+    border: 2px solid #E03137;
+    padding: 10px;
+    width: 300px;
+    height: 290px;
+
+}
+img.ima{
+  width: 300px;
+    height: 290px;	
+}
